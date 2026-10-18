@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="17.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joeldroid.gastos.PrimaryController">
+   <children>
+      <Label text="Alimentación"/>
+      <TextField fx:id="txtalim" text=""/>
+      <Label text="Refrigerios"/>
+      <TextField fx:id="txtre" text=""/>
+      <Label text="Transporte"/>
+      <TextField fx:id="txttrans" text=""/>
+      <Label text="Telefonía"/>
+      <TextField fx:id="txttel" text=""/>
+      <Label text="Otros"/>
+      <TextField fx:id="txto" text=""/>
+      <Button fx:id="btncal" text="Calcular estadísticas" onAction="#calcular"/>
+      <Button fx:id="btnlim" text="Limpiar" onAction="#limpiar"/>
+      <Label text="Estadísticas"/>
+      <Label text="Total semanal"/>
+      <TextField fx:id="txttol" text=""/>
+      <Label text="Gasto más alto"/>
+      <TextField fx:id="txtgal" text=""/>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

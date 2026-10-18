@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joeldroid.billetes.PrimaryController">
+   <children>
+      <Label text="Dinero:"/>
+      <TextField fx:id="txtdinero" text=""/>
+      <Button fx:id="btnlim" text="X" onAction="#limpiar"/>
+      <Button fx:id="btndes" text="Desglosar" onAction="#desglosar"/>
+      <Label text="Billetes de $500"/>
+      <Label fx:id="lbl500" text="0"/>
+      <Label text="Billetes de $200"/>
+      <Label fx:id="lbl200" text="0"/>
+      <Label text="Billetes de $100"/>
+      <Label fx:id="lbl100" text="0"/>
+      <Label text="Billetes de $50"/>
+      <Label fx:id="lbl50" text="0"/>
+      <Label text="Billetes de $20"/>
+      <Label fx:id="lbl20" text="0"/>
+      <Label text="Monedas de $10"/>
+      <Label fx:id="lbl10" text="0"/>
+      <Label text="Monedas de $5"/>
+      <Label fx:id="lbl5" text="0"/>
+      <Label text="Monedas de $2"/>
+      <Label fx:id="lbl2" text="0"/>
+      <Label text="Monedas de $1"/>
+      <Label fx:id="lbl1" text="0"/>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
