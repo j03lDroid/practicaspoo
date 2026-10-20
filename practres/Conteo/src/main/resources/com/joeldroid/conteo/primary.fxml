@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joeldroid.conteo.PrimaryController">
+   <children>
+      <Label text="Contar número de clics" />
+      <TextField fx:id="txtnum" text=""/> 
+      <Button fx:id="btncontar" text="¡Contar!" onAction="#contar"/>
+      <Label text="Esperar 10 segundos"/>
+      <ProgressBar fx:id="pb" progress="0.0" />
+      <Button fx:id="btnesperar" text="¡Esperar!" onAction="#esperar"/>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
